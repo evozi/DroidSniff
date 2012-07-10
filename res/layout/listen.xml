@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f8f9fe"
+    android:orientation="vertical" >
+<!-- 
+    <TextView
+        android:id="@+id/networkname"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:gravity="center_horizontal"
+        android:lines="1"
+        android:paddingTop="5dip"
+        android:singleLine="true"
+        android:text="TEST"
+        android:textColor="#000"
+        android:textSize="13dip"
+        android:textStyle="bold" />
+ -->
+    <TextView
+        android:id="@+id/spoofaddress"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:gravity="center_horizontal"
+        android:lines="1"
+        android:singleLine="true"
+        android:text="TEST"
+        android:textColor="#000"
+        android:textSize="13dip"
+        android:textStyle="bold" />
+
+    <com.evozi.droidsniff.objects.SessionListView
+        android:id="@+id/sessionlist"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0"
+        android:divider="#FFCC00" >
+    </com.evozi.droidsniff.objects.SessionListView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10px" >
+
+        <CheckBox
+            android:id="@+id/cbarpspoof"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".50"
+            android:checked="true"
+            android:text="@string/cbarpspoof"
+            android:textColor="#000"
+            android:textSize="12sp" />
+
+        <CheckBox
+            android:id="@+id/cbgeneric"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".50"
+            android:checked="true"
+            android:text="@string/cbgeneric"
+            android:textColor="#000"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/footer_tile_black"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".50"
+            android:gravity="center"
+            android:text="TEST"
+            android:textColor="#FFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/bstartstop"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/status"
+            android:layout_weight=".50"
+            android:enabled="true"
+            android:text="Start"
+            android:textSize="12sp" >
+        </Button>
+    </LinearLayout>
+
+</LinearLayout>

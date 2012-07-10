@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<authdefinitions>
+	<auth>
+		<name>Amazon</name>
+		<domain>amazon.com</domain>
+		<url>http://www.amazon.com</url>
+		<cookiename>x-acbde</cookiename>
+	</auth>
+	<auth>
+		<name>facebook</name>
+		<domain>facebook.com</domain>
+		<url>http://www.facebook.com</url>
+		<mobileurl>http://m.facebook.com</mobileurl>
+		<idurl>http://m.facebook.com/profile.php</idurl>
+		<regexp><![CDATA[(<title>[:space:]*)([^<]*)(</title>)]]></regexp>
+		<cookiename>c_user</cookiename>
+		<cookiename>datr</cookiename>
+		<cookiename>lu</cookiename>
+		<cookiename>xs</cookiename>
+	</auth>
+	<auth>
+		<name>facebook - mobile</name>
+		<url>http://m.facebook.com</url>
+		<domain>facebook.com</domain>
+		<idurl>http://m.facebook.com/profile.php</idurl>
+		<regexp><![CDATA[(<title>)([^<]*[:space:]*)(</title>)]]></regexp>
+		<cookiename>datr</cookiename>
+		<cookiename>m_user</cookiename>
+	</auth>
+	<auth>
+		<name>flickr</name>
+		<domain>flickr.com</domain>
+		<url>http://www.flickr.com</url>
+		<mobileurl>http://m.flickr.com</mobileurl>
+		<cookiename>cookie_session</cookiename>
+		<regexp><![CDATA[(data-ywa-name="Account name">[:space:]*)([^<]*)(</a>)]]></regexp>
+	</auth>
+	<auth>
+		<name>Twitter</name>
+		<domain>twitter.com</domain>
+		<url>http://www.twitter.com</url>
+		<regexp><![CDATA[(<span id="screen-name">[:space:]*)([^<]*)(</span>)]]></regexp>
+		<cookiename>auth_token</cookiename>
+		<cookiename>_twitter_sess</cookiename>
+	</auth>
+	<auth>
+		<name>LinkedIn</name>
+		<domain>linkedin.com</domain>
+		<url>http://www.linkedin.com</url>
+		<cookiename>bcookie</cookiename>
+		<cookiename>leo_auth_token</cookiename>
+		<regexp><![CDATA[(class="username">[:space:]*)([^<]*)(</a>)]]></regexp>
+	</auth>
+	<auth>
+		<name>Yahoo</name>
+		<domain>yahoo.com</domain>
+		<url>http://www.yahoo.com</url>
+		<mobileurl>http://mobile.yahoo.com</mobileurl>
+		<cookiename>T</cookiename>
+		<cookiename>Y</cookiename>
+		<regexp><![CDATA[(nickname-p2">[:space:]*)([^<]*)(</span>)]]></regexp>
+	</auth>
+	<auth>
+		<name>Google</name>
+		<domain>google.com</domain>
+		<url>http://www.google.com</url>
+		<cookiename>SID</cookiename>
+		<cookiename>NID</cookiename>
+		<cookiename>HSID</cookiename>
+		<cookiename>PREF</cookiename>
+	</auth>
+	
+	<!--added-->
+	<auth>
+		<name>Reddit</name>
+		<domain>reddit.com</domain>
+		<url>http://www.reddit.com</url>
+        <mobileurl>http://www.reddit.com/.compact</mobileurl>
+		<cookiename>reddit_session</cookiename>
+		<cookiename>reddit_first</cookiename>
+	</auth>
+</authdefinitions>

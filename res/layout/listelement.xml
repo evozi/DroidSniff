@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:gravity="center_vertical">
+	<ImageView
+		android:id="@+id/image"
+		android:layout_width="35dip"
+		android:layout_height="30dip"
+		android:scaleType="centerCrop" 
+		android:paddingLeft="5px"/>
+	<RelativeLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+		<TextView
+			android:id="@+id/listtext1"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:layout_gravity="left"
+			android:textSize="15dip"
+			android:ellipsize="end"
+			android:lines="1"
+			android:singleLine="true"
+			android:textColor="#000"
+			android:layout_marginLeft="10dip" />
+		<TextView
+			android:id="@+id/listtext2"
+			android:layout_width="fill_parent"
+			android:ellipsize="end"
+			android:lines="1"
+			android:singleLine="true"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:layout_gravity="left"
+			android:layout_below="@id/listtext1"
+			android:textSize="13dip"
+			android:textColor="#000"
+			android:layout_marginLeft="10dip" />
+		
+		<TextView
+			android:id="@+id/listtext3"
+			android:layout_width="fill_parent"
+			android:ellipsize="end"
+			android:lines="1"
+			android:singleLine="true"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:layout_gravity="left"
+			android:layout_below="@id/listtext2"
+			android:textSize="13dip"
+			android:textColor="#000"
+			android:layout_marginLeft="10dip" />
+	</RelativeLayout>
+</LinearLayout>

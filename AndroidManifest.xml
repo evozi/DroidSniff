@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.evozi.droidsniff"
+	android:versionName="1.0.0" android:targetSdkVersion="16" android:versionCode="16">
+	
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+    
+    <uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+	<uses-permission android:name="android.permission.WAKE_LOCK" />
+	<uses-permission android:name="com.google.android.gm.permission.WRITE_GMAIL"/>
+	<uses-sdk android:minSdkVersion="7"></uses-sdk>
+    
+	<application
+		android:icon="@drawable/icon"
+		android:label="DroidSniff">
+		<activity
+			android:configChanges="orientation|keyboardHidden"
+			android:name="com.evozi.droidsniff.activities.ListenActivity"
+			android:launchMode="singleInstance"
+			android:label="@string/app_name"
+			android:theme="@style/Theme.Sherlock.Light.ForceOverflow">
+			<intent-filter android:label="@string/app_name">
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		
+		<activity
+			android:label="@string/app_name"
+			android:configChanges="orientation|keyboardHidden"
+			android:name=".activities.HijackActivity"
+			android:theme="@style/Theme.Sherlock.Light.ForceOverflow"
+			android:uiOptions="splitActionBarWhenNarrow">
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+
+		
+	    <!-- About Activity -->
+		<activity
+			android:label="About"
+			android:configChanges="orientation|keyboardHidden"
+			android:name=".activities.AboutActivity"
+			android:theme="@style/Theme.Sherlock.Light.ForceOverflow">
+		</activity>
+		
+		<service
+			android:exported="false"
+			android:name=".services.ArpspoofService">
+		</service>
+		<service
+			android:exported="false" android:name=".services.DroidSniffService">
+		</service>
+	</application>
+
+</manifest>

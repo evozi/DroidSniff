@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/29/trunk/%20droidsheep/DroidSheep_public/jni/libnet/include/win32
+END
+Makefile.in
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/29/trunk/%20droidsheep/DroidSheep_public/jni/libnet/include/win32/Makefile.in
+END
+libnet.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/29/trunk/%20droidsheep/DroidSheep_public/jni/libnet/include/win32/libnet.h
+END
+getopt.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/29/trunk/%20droidsheep/DroidSheep_public/jni/libnet/include/win32/getopt.h
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/29/trunk/%20droidsheep/DroidSheep_public/jni/libnet/include/win32/Makefile.am
+END
+in_systm.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/29/trunk/%20droidsheep/DroidSheep_public/jni/libnet/include/win32/in_systm.h
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/29/trunk/%20droidsheep/DroidSheep_public/jni/libnet/include/win32/Makefile
+END
